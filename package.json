@@ -14,7 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/BDNTeam/chain-db-sdk.git"
   },
-  "keywords": ["chain database", "sdk"],
+  "keywords": [
+    "chain database",
+    "sdk"
+  ],
   "author": "hsiaosiyuan0@outlook.com",
   "license": "MIT",
   "bugs": {
@@ -39,9 +42,18 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "collectCoverageFrom": ["./src/**/*.ts"],
+    "collectCoverageFrom": [
+      "./src/**/*.ts"
+    ],
     "testRegex": "test\\/*\\.ts",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   },
   "dependencies": {
     "lodash": "^4.17.10",
