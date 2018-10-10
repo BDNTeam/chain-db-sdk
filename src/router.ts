@@ -65,7 +65,7 @@ export function installTo(exp: express.Application) {
 export class ApiResponse {
   code = 0;
   msg = "";
-  data = null;
+  data: string | null = null;
 }
 
 export type ApiHandler = (req: express.Request, res: ApiResponse) => void;
