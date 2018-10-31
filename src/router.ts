@@ -78,6 +78,11 @@ export function api() {
     route.actualHandler = async (req: express.Request, res: express.Response) => {
       const apiResp = new ApiResponse();
       try {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header(
+          "Access-Control-Allow-Headers",
+          "Origin, X-Requested-With, Content-Type, Accept"
+        );
         await handler(req, apiResp);
         res.send(apiResp);
       } catch (e) {
